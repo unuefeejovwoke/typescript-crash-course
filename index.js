@@ -13,7 +13,7 @@ function saveCounter() {
     document.getElementById("lastCount").textContent += lastCount;
     count = 0; // Reset the counter to 0
     document.getElementById("counter-id").textContent = count;
-  }
+}
 
   // Function to clear the counter
   function clearCounter() {
@@ -30,3 +30,7 @@ function saveCounter() {
   welcomeId.innerText = greeting + "  " + fullName
 
   welcomeId += "👋 "
+
+
+
+
