@@ -24,22 +24,34 @@ if (personAge < 100){
 }
 
 let firstCard = 10
-let secondCard =11
-let sum = firstCard + secondCard + 4
+let secondCard =4
+let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
 let message = ""
+let messageEl = document.getElementById("message-id")
+let sumId = document.getElementById("sum-id")
+let cardId = document.getElementById("card-id")
 
-if (sum <= 20){
-  console.log("Do you want to draw a new card")
-  message = "No card"
-  console.log(message)
-} else if (sum === 21){
-  console.log("Whoo you got a black card")
-  message = "Has black jack"
-  console.log(message)
-} else{
-  console.log("You are out of the game")
-  message = "Ou of game"
-  console.log(message)
+function startgame(){
+  
+  cardId.textContent = "Cards: " +  firstCard + " "+ secondCard
+  sumId.textContent = "Sum: " + sum
+  
+  if (sum <= 20){
+   
+    message = "No card"
+    
+  } else if (sum === 21){
+   
+    message = "Has black jack"
+    hasBlackJack = true
+  } else{
+   
+    message = "Out of game"
+    isAlive = false
+  }
+  messageEl.textContent = message
+  
+ 
 }
