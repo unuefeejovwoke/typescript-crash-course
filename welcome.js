@@ -55,3 +55,10 @@ function startgame(){
   
  
 }
+
+function newCard() {
+  let newcard = 4
+  sum += newcard
+
+  startgame()
+}
