@@ -23,8 +23,9 @@ if (personAge < 100){
   console.log("Not elegible, you have one")
 }
 
-let firstCard = 10
-let secondCard =4
+let firstCard = getRandomCard()
+let secondCard = getRandomCard()
+let cards = [firstCard, secondCard]
 let sum = firstCard + secondCard
 let hasBlackJack = false
 let isAlive = true
@@ -33,9 +34,18 @@ let messageEl = document.getElementById("message-id")
 let sumId = document.getElementById("sum-id")
 let cardId = document.getElementById("card-id")
 
+function getRandomCard() {
+  let randomcard = 5
+  return randomcard
+
+}
+
 function startgame(){
   
-  cardId.textContent = "Cards: " +  firstCard + " "+ secondCard
+  cardId.textContent = "Cards: "
+  for (let i=0; i < cards.length; i ++){
+    cardId.textContent += cards[i] + " "  
+  }
   sumId.textContent = "Sum: " + sum
   
   if (sum <= 20){
@@ -57,8 +67,65 @@ function startgame(){
 }
 
 function newCard() {
-  let newcard = 4
+  let newcard = getRandomCard()
   sum += newcard
+  cards.push(newcard)
+  console.log(cards)
 
   startgame()
 }
+
+let featuredposts = ['linkedln', 'instagram', 'youtube']
+
+featuredposts.push('twitter')
+console.log(featuredposts)
+
+featuredposts.pop()
+console.log(featuredposts)
+
+for (let count = 10; count < 101; count +=10){
+  console.log(count)
+}
+
+for (let i =0; i < featuredposts.length; i +=1){
+    console.log(featuredposts[i])
+}
+
+let steps = [4, 6, 8, 10]
+
+for (let step = 0; step < steps.length; step += 1){
+  console.log(steps[step])
+}
+
+// let sentenceId = ['Hello', 'my', 'name', 'is' ,'ejoke']
+
+// let greetingId = document.getElementById('sentence')
+
+// for (let i = 0; i < sentenceId.length; i++){
+//   greetingId.textContent += sentenceId[i] + ' '
+// }
+
+
+
+let player1Time =102
+let player2Time = 107
+
+function Fastestplayer() {
+  if ( player1Time < player2Time){
+    return player1Time
+  } else if( player2Time < player1Time){
+    return player2Time
+  } else {
+    return player1Time
+  }
+}
+
+let fastestRace = Fastestplayer()
+console.log(fastestRace)
+
+function Totalrace() {
+  return player1Time + player2Time
+}
+
+let raceTotal = Totalrace()
+console.log(raceTotal)
