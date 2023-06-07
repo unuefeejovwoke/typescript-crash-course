@@ -23,27 +23,40 @@ if (personAge < 100){
   console.log("Not elegible, you have one")
 }
 
-let firstCard = getRandomCard()
-let secondCard = getRandomCard()
-let cards = [firstCard, secondCard]
-let sum = firstCard + secondCard
+// let firstCard = getRandomCard()
+// let secondCard = getRandomCard()
+let cards = [] //[firstCard, secondCard]
+let sum = 0 //firstCard + secondCard
 let hasBlackJack = false
-let isAlive = true
+let isAlive = false //set to false
 let message = ""
 let messageEl = document.getElementById("message-id")
 let sumId = document.getElementById("sum-id")
 let cardId = document.getElementById("card-id")
 
 function getRandomCard() {
-  let randomcard = 5
-  return randomcard
+
+  let randomcard = Math.floor(Math.random() * 13) + 1
+  if ( randomcard ===1){
+    return randomcard = 10
+  } else if (randomcard > 10) {
+    return randomcard = 11
+  } else {
+    return randomcard
+  }
+  
 
 }
 
 function startgame(){
+  // isAlive = true
+  // firstCard = getRandomCard()
+  // secondCard = getRandomCard()
+  // cards = [firstCard, secondCard]
+  // sum = firstCard + secondCard
   
   cardId.textContent = "Cards: "
-  for (let i=0; i < cards.length; i ++){
+  for (let i=0; i < cards.length; i ++){ 
     cardId.textContent += cards[i] + " "  
   }
   sumId.textContent = "Sum: " + sum
