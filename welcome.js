@@ -142,3 +142,6 @@ function Totalrace() {
 
 let raceTotal = Totalrace()
 console.log(raceTotal)
+
+
+// use && for and then || for or operations
