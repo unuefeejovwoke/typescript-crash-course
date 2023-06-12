@@ -49,11 +49,17 @@ function getRandomCard() {
 }
 
 function startgame(){
-  // isAlive = true
-  // firstCard = getRandomCard()
-  // secondCard = getRandomCard()
-  // cards = [firstCard, secondCard]
-  // sum = firstCard + secondCard
+  isAlive = true
+  firstCard = getRandomCard()
+  secondCard = getRandomCard()
+  cards = [firstCard, secondCard]
+  sum = firstCard + secondCard
+
+  renderGame()
+}
+
+function renderGame(){
+  
   
   cardId.textContent = "Cards: "
   for (let i=0; i < cards.length; i ++){ 
@@ -63,7 +69,7 @@ function startgame(){
   
   if (sum <= 20){
    
-    message = "No card"
+    message = "Do you want to draw a new card"
     
   } else if (sum === 21){
    
@@ -80,12 +86,16 @@ function startgame(){
 }
 
 function newCard() {
-  let newcard = getRandomCard()
-  sum += newcard
-  cards.push(newcard)
-  console.log(cards)
 
-  startgame()
+  if ( isAlive === true && hasBlackJack === false){
+    let newcard = getRandomCard()
+    sum += newcard
+    cards.push(newcard)
+    console.log(cards)
+  
+    renderGame()
+  }
+  
 }
 
 let featuredposts = ['linkedln', 'instagram', 'youtube']
