@@ -34,6 +34,15 @@ let messageEl = document.getElementById("message-id")
 let sumId = document.getElementById("sum-id")
 let cardId = document.getElementById("card-id")
 
+let player =  {
+  name : 'Joks',
+  chips : '145',
+}
+
+
+let playerEl = document.getElementById("player-id")
+playerEl.textContent = player.name + ": $" + player.chips
+
 function getRandomCard() {
 
   let randomcard = Math.floor(Math.random() * 13) + 1
