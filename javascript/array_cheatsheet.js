@@ -13,3 +13,15 @@ colors.length; //3
 
 //unshift(val) - adds value to START of an array
 //shift() - removes and returns first element in an array
+
+//FIRST ASSIGNMENT
+const planets = ['The Moon', 'Venus', 'Earth', 'Mars', 'Jupiter'];
+
+// Remove the first element, "The Moon", from the planets array
+planets.shift();
+
+// Add "Saturn" at the very end of the planets array
+planets.push("Saturn");
+
+// Add "Mercury" as the first element in the planets array
+planets.unshift("Mercury");
