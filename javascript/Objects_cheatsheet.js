@@ -14,3 +14,12 @@ dog["age"]; //7
 //updating values
 dog.breed = "mutt";
 dog["age"] = 8;
+
+// first object assignment
+// Your code goes in here:
+const product = {
+    name: 'Gummy Bears',
+    inStock : true,
+    price : 1.99,
+    flavors : ["grape", "apple", "cherry"]
+}
