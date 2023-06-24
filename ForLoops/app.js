@@ -23,7 +23,7 @@ for (let num = 1; num <= 10; num += 1) {
 // ======================================
 // MORE EXAMPLES OF FOR LOOPS!
 // ======================================
-
+//odd nums
 // for (let i = 1; i <= 20; i += 2) {
 //     console.log(i)
 // }
@@ -47,6 +47,36 @@ for (let num = 1; num <= 10; num += 1) {
 // ================================
 
 
+let animals = [
+    "cat",
+    "dog",
+    "elephant",
+    "lion",
+    "giraffe",
+    "tiger",
+    "bear",
+    "monkey",
+    "penguin",
+    "zebra",
+    "kangaroo",
+    "hippopotamus",
+    "snake",
+    "turtle",
+    "dolphin",
+    "ostrich",
+    "koala",
+    "rhinoceros",
+    "panda",
+    "crocodile"
+  ];
 
+  
+//   for (let i =0; i < animals.length; i ++){
+//     console.log(animals[i])
+//   }
+
+for (let i = animals.length - 1; i >= 0; i --){
+    console.log(animals[i])
+  }
 
 
