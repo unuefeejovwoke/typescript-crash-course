@@ -79,4 +79,28 @@ for (let i = animals.length - 1; i >= 0; i --){
     console.log(animals[i])
   }
 
+seatingAnimals = [
+    ["koala",
+    "rhinoceros",
+    "panda",
+    "crocodile"],
+    ["hippopotamus",
+    "snake",
+    "turtle",
+    "dolphin",],
+    ["elephant",
+    "lion",
+    "giraffe",
+    "tiger",]
+
+]
+
+for (let i = 0; i< seatingAnimals.length; i ++){
+    row = seatingAnimals[i];
+
+    console.log(`ROW #${i + 1}`)
+    for(let j =0; j< row.length; j++){
+        console.log(row[j])
+    }
+}
 
