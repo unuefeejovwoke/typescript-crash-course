@@ -28,3 +28,10 @@ for (let i = 0; i < seatingChart.length; i++) {
     }
 }
 
+const SECRET = "BabbyHippo";
+
+let guess = prompt("Please enter key")
+while ( guess != SECRET){
+    guess = prompt("Incorrect pin, Try again")
+}
+console.log("Congrats")
