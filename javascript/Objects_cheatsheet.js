@@ -36,3 +36,5 @@ const restaurant = {
 
 //YOUR CODE GOES DOWN HERE:
 var fullAddress = `${restaurant.address}, ${restaurant.city}, ${restaurant.state} ${restaurant.zipcode}`;
+
+//figma to vscode
