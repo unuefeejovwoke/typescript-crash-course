@@ -6,16 +6,21 @@ while (!maximum){
 const targetNum = Math.floor(Math.random() * maximum) +1;
 console.log(targetNum)
 
-let guess = parseInt(prompt("Enter your number"))
+let guess = prompt("Enter your number OR type 'q' to quit")
 let attempts = 1;
 
 while (parseInt(guess) !== targetNum){
     if (guess === 'q') break;
-    attempts++;
+    guess = parseInt(guess)
+    
     if (guess > targetNum){
         guess = prompt("Too high, enter a new guess")
-    } else{
+        attempts++;
+    } else if( guess< targetNum){
         guess = prompt("Too low, enter a new guess")
+        attempts++;
+    } else{
+        guess = prompt("Invlaid guess. Please enter a number or 'q' to quit")
     }
 }
 
