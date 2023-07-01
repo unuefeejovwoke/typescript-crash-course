@@ -54,6 +54,24 @@ function rant(message) {
     }
     return total;
   }
+  function returnDay(num) {
+    const daysOfWeek = [
+      null, // Index 0 is null to handle numbers outside the valid range
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ];
+  
+    if (num >= 1 && num <= 7) {
+      return daysOfWeek[num];
+    } else {
+      return null;
+    }
+  }
   
   
 
