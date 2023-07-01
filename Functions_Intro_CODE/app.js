@@ -38,6 +38,15 @@ function rant(message) {
       console.log("Not Snake Eyes!");
     }
   }
+  function capitalize(str) {
+    if (str.length === 0) {
+      return str; // Return an empty string if the input is empty
+    } else {
+      const firstLetter = str.charAt(0).toUpperCase(); // Get the first letter and capitalize it
+      const restOfStr = str.slice(1); // Get the rest of the string after the first letter
+      return firstLetter + restOfStr; // Concatenate the capitalized first letter with the rest of the string
+    }
+  }
   
 
 
