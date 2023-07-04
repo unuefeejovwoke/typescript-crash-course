@@ -83,7 +83,23 @@ function rant(message) {
   Eggs()
   console.log(totalEggs)
 
+  let animal = "Giant Pacific Octopus";
+  function observe(){
+      let animal = "Pajama Squid";
+      console.log(animal);
+  }
+  observe();
 
+  //task 2
+let deadlyAnimal = "Blue-Ringed Octopus";
+ 
+function handleAnimal() {
+    let deadlyAnimal = "Scorpionfish";
+    console.log(deadlyAnimal);
+}
+ 
+handleAnimal();
+console.log(deadlyAnimal)
 
 
 
