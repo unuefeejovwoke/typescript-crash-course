@@ -73,7 +73,15 @@ function rant(message) {
     }
   }
   
-  
+  totalEggs = 0;
+
+  function Eggs(){
+    totalEggs = 8;
+  }
+
+  console.log(totalEggs)
+  Eggs()
+  console.log(totalEggs)
 
 
 
