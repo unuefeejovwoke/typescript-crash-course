@@ -21,6 +21,15 @@ const rollDie = () => (
     Math.floor(Math.random() * 6) + 1
 )
 
+// assignment
+
+const greet = name => {
+    return `Hey ${name}!`
+}
+
+greet("Hagrid") //"Hey Hagrid!" 
+greet("Luna") //"Hey Luna!"
+
 
 
 
