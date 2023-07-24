@@ -63,3 +63,15 @@ const recentMovies = movies.filter(m => m.year > 2000)
 // const goodTitles = goodMovies.map(m => m.title)
 
 movies.filter(m => m.score > 80).map(m => m.title);
+
+//assignment
+
+function validUserNames(usernames) {
+    return usernames.filter(username => username.length < 10);
+  }
+  
+  
+  const usernames = ['mark', 'staceysmom1978', 'q29832128238983', 'carrie98', 'MoanaFan'];
+  const validUsernamesArray = validUserNames(usernames);
+  console.log(validUsernamesArray); // Output: ["mark", "carrie98", "MoanaFan"]
+  
