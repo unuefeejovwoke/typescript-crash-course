@@ -10,3 +10,9 @@ for (let link of allLinks) {
     link.style.textDecorationColor = 'magenta';
     link.style.textDecorationStyle = 'wavy'
 }
+
+
+//queryselector assigment
+// YOUR CODE GOES IN HERE:
+const span = document.querySelector('span');
+span.innerHTML = "Disgusting";
