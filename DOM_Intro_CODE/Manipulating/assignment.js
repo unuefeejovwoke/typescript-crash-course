@@ -24,3 +24,11 @@ const listItems = document.querySelectorAll('li');
 listItems.forEach(li => {
   li.classList.toggle('highlight');
 });
+
+
+// Create and append 100 new button elements
+for (let i = 0; i < 100; i++) {
+    const button = document.createElement('button');
+    button.textContent = `Button ${i + 1}`; // Set button text
+    container.appendChild(button); // Append button to container
+  }
