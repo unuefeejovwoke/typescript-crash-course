@@ -1,8 +1,10 @@
 const btn = document.querySelector('#v2');
+const output = document.querySelector("#set");
 
 btn.onclick = function () {
-    console.log("YOU CLICKED ME!")
-    console.log("I HOPE IT WORKED!!")
+    const set = document.createElement("p");
+    set.innerHTML = "Hello"
+    output.appendChild(set);
 }
 
 function scream() {
