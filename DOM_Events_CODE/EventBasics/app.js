@@ -1,7 +1,7 @@
 const btn = document.querySelector('#v2');
 const output = document.querySelector("#set");
 
-btn.onclick = function () {
+btn.onclick = () => {
     const set = document.createElement("p");
     set.innerHTML = "Hello"
     output.appendChild(set);
