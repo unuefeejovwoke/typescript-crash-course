@@ -23,3 +23,27 @@ const addTweet = (username, tweet) => {
     tweetsContainer.append(newTweet);
 }
 
+
+var form = document.getElementById('grocery-form');
+var productList = document.getElementById('list');
+
+// Listen for the form submission
+form.addEventListener('submit', function(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    // Get the input values
+    var productName = document.getElementById('product').value;
+    var quantity = document.getElementById('qty').value;
+
+    // Create a new list item
+    var listItem = document.createElement('li');
+    listItem.textContent = quantity + ' ' + productName;
+
+    // Append the new list item to the list
+    productList.appendChild(listItem);
+
+    // Reset the input values
+    document.getElementById('product').value = '';
+    document.getElementById('qty').value = '';
+});
