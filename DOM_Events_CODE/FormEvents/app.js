@@ -47,3 +47,17 @@ form.addEventListener('submit', function(event) {
     document.getElementById('product').value = '';
     document.getElementById('qty').value = '';
 });
+
+const input = document.getElementById('username');
+const h1 = document.getElementById('h1');
+
+input.addEventListener('input', (e) =>{
+    
+    if( input.value.trim() === ''){
+        h1.innerHTML = "Enter Your Username";
+    } else{
+        h1.innerHTML = "Welcome," + " " + input.value;
+   
+    }
+    
+})
